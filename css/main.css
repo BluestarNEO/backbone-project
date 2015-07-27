@@ -26,6 +26,45 @@ html, body {
     color: white;
 }
 
+body {
+    padding: 100px;
+}
+
+input, select, textarea {
+    color: rgba(255, 140, 255, .8);
+}
+
+input {
+    background-color: rgba(255, 255, 255, .2);
+    border: 2px solid rgba(255, 140, 255, .2);
+    font-size: 16pt;
+    width: 300px;
+}
+
+
+form > div {
+    padding: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 140, 255, .8);
+}
+
+button {
+    background-color: #0079BF;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 0;
+    font-family: 'Rock Salt';
+}
+
+form > img {
+    margin: 10px;
+}
+
 .home {
     background: url("../images/darth-hoth.png") no-repeat;
     background-size: cover;
@@ -51,16 +90,12 @@ html, body {
     color: #B93F50;
 }
 
-body {
-    padding: 100px;
-}
-
 .users {
     background-color: #2F186D;
 }
 
 .products {
-    background-color: #ff8c00;
+    background-color: #2F186D;
 }
 
 
@@ -165,4 +200,12 @@ body {
 .prod-img {
     width: 235px;
     margin-left: 80px;
+}
+
+.dropdown {
+    width: 300px;
+    font-size: 16pt;
+    background-color: rgba(255, 255, 255, .2);
+    border: 2px solid rgba(255, 140, 255, .2);
+    color: rgba(255, 140, 255, .8);
 }
