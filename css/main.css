@@ -47,7 +47,7 @@ form > div {
 }
 
 ::-webkit-input-placeholder {
-    color: rgba(255, 140, 255, .5);
+    color: rgba(255, 140, 255, .8);
 }
 
 button {
