@@ -161,6 +161,11 @@ form > img {
 }
 
 .text-outer {
+    font-family: "Slabo 27px", Arial;
+    font-size: 35px;
+    text-shadow: 2px 2px #ff8c00;
+    line-height: 35px;
+
     position: absolute;
     top: 30px;
     left: 152px;
@@ -168,7 +173,6 @@ form > img {
     height: 135px;
     z-index: 500;
     text-align: center;
-    font-size: 16pt;
 }
 
 .inner:hover .textWrapper {

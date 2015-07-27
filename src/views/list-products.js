@@ -18,7 +18,6 @@ var ListProducts = Backbone.View.extend({
     var productCollection = this.collection;
     console.log("pc: " + productCollection);
 
-
     Handlebars.registerHelper('if_even', function(conditional, options) {
       if((conditional % 2) == 0) {
         return options.fn(this);
@@ -27,7 +26,6 @@ var ListProducts = Backbone.View.extend({
       }
       });
     $('body').removeClass().addClass('products');
-
 
     // Fetch Collection from Server
     productCollection.fetch().done(function (products) {
