@@ -1,12 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Brad",
-      "hobby": "CSS",
-      "img": "http://robohash.org/14ebc73da14.png"
-    },
-    {
       "id": 2,
       "name": "Kevin",
       "hobby": "Beard Growing",
@@ -59,6 +53,12 @@
       "hobby": "Staying up Late",
       "img": "http://robohash.org/14ed56630a7.png",
       "id": 14
+    },
+    {
+      "name": "Troy",
+      "hobby": "Cars",
+      "img": "http://robohash.org/14ed5ebbca9.png",
+      "id": 15
     }
   ],
   "products": [

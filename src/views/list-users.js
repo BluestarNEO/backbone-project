@@ -21,9 +21,12 @@ var ListUsers = Backbone.View.extend({
     Handlebars.registerHelper('if_even', function(conditional, options) {
       
       if((conditional % 2) == 0) {
+        // console.log("fn: " + options.fn(this));
         return options.fn(this);
       } else {
+        // console.log("inverse: " + options.fn(this));
         return options.inverse(this);
+
       }
     });
 
