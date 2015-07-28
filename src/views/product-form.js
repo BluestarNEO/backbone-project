@@ -18,7 +18,6 @@ var ProductFormView = Backbone.View.extend({
   editMode: false,
 
   render: function (prodId) {
-  	console.log('render fn called')
     var _this = this;
     this.editMode = !!prodId;
 

@@ -15,7 +15,6 @@ var ListProducts = Backbone.View.extend({
   render: function () {
     var _this = this;
     var productCollection = this.collection;
-    console.log("pc: " + productCollection);
 
     // Custome Handlebars helper for even and odd indexed array of users/products
     Handlebars.registerHelper('if_even', function(conditional, options) {
