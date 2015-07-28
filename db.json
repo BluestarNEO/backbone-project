@@ -19,12 +19,6 @@
       "id": 3
     },
     {
-      "name": "Joe",
-      "hobby": "carpentry",
-      "img": "http://robohash.org/14ed0ab9aaf.png",
-      "id": 4
-    },
-    {
       "name": "Ryan",
       "hobby": "Wearing Nice Shirts",
       "img": "http://robohash.org/14ecbe8c626.png",
@@ -77,12 +71,6 @@
       "hobby": "being a jerk",
       "img": "http://robohash.org/14ed08e3b93.png",
       "id": 14
-    },
-    {
-      "name": "keith",
-      "hobby": "coding around the world",
-      "img": "http://robohash.org/14ed19725fb.png",
-      "id": 15
     }
   ],
   "products": [
