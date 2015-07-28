@@ -55,12 +55,6 @@
       "id": 10
     },
     {
-      "name": "juice",
-      "hobby": "getting testies bitten",
-      "img": "http://robohash.org/14ecc0def98.png",
-      "id": 12
-    },
-    {
       "name": "wade",
       "hobby": "being a scientist",
       "img": "http://robohash.org/14ed078d9fe.png",
@@ -105,6 +99,14 @@
       "qty": 4,
       "img": "http://www.rebelscum.com/vintage/vintr2d2scopeloose.jpg",
       "id": 5
+    },
+    {
+      "name": "Boba Fett",
+      "type": "Action Figure",
+      "price": 130,
+      "qty": 2,
+      "img": "http://www.rebelscum.com/Kotobukiya/BobaFettARTFX/01.jpg",
+      "id": 6
     }
   ]
 }

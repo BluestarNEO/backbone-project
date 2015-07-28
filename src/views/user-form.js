@@ -54,20 +54,26 @@ var UserFormView = Backbone.View.extend({
     // Add Mode (Create User)
     if (!this.editMode) {
 
-      // Only set the image on add mode
-      formData.img = 'http://robohash.org/'+ Date.now().toString(16) + '.png'
+      // Check if fields are filled before submitting
+      if(!!formData.name == false || !!formData.hobby == false){
+        alert("Please fill out all the fields")
+        return false;
+      } else {
+        // Only set the image on add mode
+        formData.img = 'http://robohash.org/'+ Date.now().toString(16) + '.png'
 
-      App.Collections.user.create(formData, {
-        success: function (user) {
-          App.router.navigate('/', { trigger: true });
-        }
-      });
+        App.Collections.user.create(formData, {
+          success: function (user) {
+            App.router.navigate('/users', { trigger: true });
+          }
+        });
+      }
 
     // Edit Mode (Update User)
     } else {
       this.user.set(formData);
       this.user.save().done(function () {
-        App.router.navigate('/', { trigger: true });
+        App.router.navigate('/users', { trigger: true });
       });
     }
 

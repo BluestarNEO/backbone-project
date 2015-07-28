@@ -2,7 +2,6 @@ var $ = require('jquery');
 var Backbone = require('backbone');
 var productTemplate = require('../templates/product-form.hbs');
 
-
 /****************************************
   App
 *****************************************/
@@ -55,21 +54,26 @@ var ProductFormView = Backbone.View.extend({
       img: $('form.product input[name="img"]').val(),
     };
 
-
-        // Add Mode (Create Product)
+    // Add Mode (Create Product)
     if (!this.editMode) {
 
-      App.Collections.product.create(formData, {
-        success: function () {
-          App.router.navigate('/', { trigger: true });
-        }
-      });
+      // Check if fields are filled before submitting
+      if(!!formData.name == false || !!formData.type == false || !!formData.price == false || !!formData.qty == false || !!formData.img == false){
+        alert("Please fill out all the fields")
+        return false;
+      } else {
+        App.Collections.product.create(formData, {
+          success: function () {
+            App.router.navigate('/products', { trigger: true });
+          }
+        });
+      }
 
     // Edit Mode (Update Product)
     } else {
       this.product.set(formData);
       this.product.save().done(function () {
-        App.router.navigate('/', { trigger: true });
+        App.router.navigate('/products', { trigger: true });
       });
     }
 

@@ -6,13 +6,12 @@ var homeTemplate = require('../templates/home.hbs');
 var App = require('../app');
 
 // View: List Users
-
 var HomePage = Backbone.View.extend({
   el: $('main'),
 
   render: function () {
-      this.$el.html(homeTemplate());
-      $('body').removeClass().addClass('home')
+    this.$el.html(homeTemplate());
+    $('body').removeClass().addClass('home');
   }
 });
 
